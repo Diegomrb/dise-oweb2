@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/array_recetas.js"></script>
+    <script src="js/codigo_contacto.js"></script>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>TFrita - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabeza">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo1.png" alt="logo con forma de torta frita">
+                    <h3>TFRITA</h3>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Recetas</a>
+                <a class="active" href="contacto.html">Contacto</a>
+            </nav>
+            <div id="dyn">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+                <div></div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+    </section>
+
+    <div class="titulo">
+        <h1>Contacto</h1>
+    </div>
+
+    <div class="contenedor">
+        <section class="info_contacto">
+            <h3>Información de Contacto</h3>
+            <p>Llená el formulario y nuestro equipo se estará comunicando contigo en menos de 24 hrs.</p>
+            <p><i class="fas fa-phone-alt"></i> 2393 2392</p>
+            <p><i class="fas fa-envelope"></i> tfrita@recetas.com.uy</p>
+            <p><i class="fas fa-map-marker-alt"></i> 18 De Julio 344</p>
+        </section>
+        <section class="formulario">
+            <div id="mensaje"></div>
+            <form class="form">
+                <fieldset class="datos">
+                    <label for="nombre">Nombre(*)</label>
+                    <input type="text" name="nombre" placeholder="Al menos 3 caracteres" id="nombre" required>
+                    <label for="apellido">Apellido(*)</label>
+                    <input type="text" name="apellido" placeholder="Al menos 3 caracteres" id="apellido" required>
+                    <label for="telefono">Telefono(*)</label>
+                    <input type="nomber" name="telefono" placeholder="Al menos 8 números" id="telefono" required>
+                    <label for="email">Email (*)</label>
+                    <input type="email" name="email" placeholder="En formato correcto" id="email" required>
+                    
+                </fieldset>
+                <div class="ultimo">
+                    <div>
+                        <label class="area" for="mensasje">Mensaje</label>
+                        <textarea name="mensaje" id="coment" placeholder="Escribe tu mensaje.."></textarea>
+                        <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+                    </div>
+                    <fieldset>
+                        <legend>¿Tuviste algun problema con la página?</legend>
+                        <input type="radio" name="pregunta" value="si" id="si">
+                        <label for="si">Si</label>
+
+                        <input type="radio" name="pregunta" value="no" id="no">
+                        <label for="no">No</label>
+                    </fieldset>
+                    
+                    </select>
+                    
+            </form>
+            </form>
+        </section>
+    </div>
+
+    <section class="recibir_info">
+        <img src="img/logo1.png">
+        <h2>Quieres recibir recetas todos los meses?</h2>
+        <input type="email" placeholder="Escribe tu mail">
+        <a href="#">
+            <p>Listo!</p>
+        </a>
+    </section>
+
+    <footer>
+        <small>®Todos los derechos reservados - Diego Rivero Nº247222</small>
+    </footer>
+</body>
+
+</html>
