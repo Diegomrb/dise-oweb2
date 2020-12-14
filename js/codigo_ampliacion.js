@@ -10,11 +10,19 @@ $(document).ready(inicio);
 
 function inicio() {
     ampliar_receta();
+    cargarImagenes();
     $("#dyn").click(activar);
     $("#dyn").click(cambiar);
 }
 
-
+/*function cargarImagenes() {
+    for (let i = 0; i <= recetas.length - 1; i++) {
+        $(".pasosrecetas").append(`
+        <div>
+            <img src="${recetas[id]['fotos_pasos'][i]}">
+        </div>`)
+    }
+*/
 
 function cambiar(){
     $("body").toggleClass("dark");
@@ -63,6 +71,6 @@ function ampliar_receta() {
     $(".pasos").prepend(`<h4>Receta</h4>`)
     for (let i = 0; i <= recetas[id]['pasos'].length - 1; i++) {
         $(".pasos").append(`<li>${recetas[id]['pasos'][i]}</li>`)
-
     }
+    $(".pasos").append(`<a class="orangebt" href="#"><p>Obtené mas info de esta receta</p></a>`)
 }

@@ -16,8 +16,8 @@ a{text-decoration: none;}
     width: 90%;
     height: 80vh;
     background: rgb(217,97,97);
-    background: linear-gradient(90deg, rgba(217,97,97,1) 0%, rgba(252,176,69,1) 100%);
-    border-radius: 25px;
+    background: linear-gradient(90deg, #d96161, #fcb045);
+    border-radius: 20px;
     position: fixed;
     top: -100vh;
     left: 5%;
@@ -59,7 +59,7 @@ a{text-decoration: none;}
 #v_modal a:hover{
     border: 1.5px solid white;
     color: white;
-    background-color:#333333 ;
+    background-color:#333333;
 }
 
 .cabeza{
@@ -210,7 +210,14 @@ nav a:hover{
     border-radius: 50px;
     font-weight: bold;
     color: #2f3439;
+    border: 1.5px solid transparent;
+    transition: 0.5s;
 }
+
+.orangebt:hover{
+    border: 1.5px solid white;
+    color: white;
+    background-color:#333333;}
 
 .infobig img{
     width:45%;
@@ -266,7 +273,7 @@ select{
     padding: 2em;
     font-size: 10px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-bottom: 2em;
     text-align: center;
 }
@@ -288,7 +295,7 @@ select{
     margin-top: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .destacadas a{
@@ -296,13 +303,13 @@ select{
     height: 360px;
     padding: 2em;
     font-size: 10px;
-    background-color: white;
-    border-radius: 25px;
+    background-color: #8e89df;
+    border-radius: 20px;
     margin-bottom: 2em;
     text-align: center;
 }
 
-.destacadas a article{color: #333333 ;}
+.destacadas a article{color: white ;}
 
 .destacadas article img{
     width: 250px;
@@ -310,9 +317,13 @@ select{
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
 }
 
+.oculto{display: none;}
+
 /*ampliacion*/
-.individuales{width: 50%;}
-.img_individual{position: top;}
+.individuales{width: 95%;}
+
+.img_individual{display: flex;}
+.prin_ampliacion{width: 90%;}
 
 .individuales small{margin: 1em 5em 0em 0em;}
 
@@ -320,7 +331,7 @@ select{
 .ingredientes{
     margin-bottom: 2em;
     line-height: 1.5em;
-    border-radius: 25px;
+    border-radius: 20px;
     color: #333333;
     list-style: none;
     background-color: white;
@@ -328,7 +339,7 @@ select{
 
     .pasos{
     line-height: 1.5em;
-    border-radius: 25px;
+    border-radius: 20px;
     color: #333333;
     list-style: none;
     background-color: white;
@@ -336,6 +347,21 @@ select{
     margin-bottom: 2em;}
 
 .individuales h2, .individuales h3, .individuales h5{margin-bottom:10px;}
+
+.individuales .orangebt{
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.individuales .orangebt p{margin: 0px;}
+
+.pasosrecetas{display: flex;
+width: 80%;}
+.pasosrecetas img{width: 200px;
+height: 180px;}
+
+/*penultima seccion*/
 
 .recibir_info{
     padding: 3em;
@@ -366,16 +392,26 @@ select{
     border-radius: 50px;
     font-weight: bold;
     color: #2f3439;
+    border: 1.5px solid transparent;
+    transition: 0.5s;
 }
+
+.recibir_info a:hover{
+    border: 1.5px solid white;
+    color: white;
+    background-color:#333333;}
 
 /*contacto*/
 
 .info_contacto{
-    width: 30%;
-    background: orange;
-    color: #2f3439;
-    border-radius: 25px;
+    display: none;
+    width: 95%;
+    background: linear-gradient(90deg, #d96161, #fcb045);
+    color: white;
+    border-radius: 20px;
     padding: 1.5em;
+    min-width: 238px;
+    margin: auto;
 }
 
 .info_contacto p{margin-bottom: 1em;}
@@ -383,9 +419,9 @@ select{
 .form{display: flex;
 align-content: space-between;
 flex-wrap: wrap;
-height: 269px;}
+height: 300px;}
 
-.formulario{width: 68%;
+.formulario{width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -400,6 +436,14 @@ height: 269px;}
     font-weight: bold;
     color: #2f3439;
     outline: none;
+    border: 1.5px solid transparent;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border: 1.5px solid white;
+    color: white;
+    background-color:#333333;
 }
 
 .ultimo{width: 100%;display: flex;}
@@ -412,20 +456,17 @@ height: 269px;}
     border: none; 
     color: #525c66; 
     font-size: 1em;
-    resize: horizontal; }
-
-.ultimo div
-{
-    margin-right: 3em;
-        border: none;
+    resize: horizontal; 
 }
 
-.datos input{padding: 1em;
+.datos input{
+    padding: 1em;
     border: none;
     outline: none;
     margin-top: 1em;
     margin-right: 100px;
     border-radius: 50px;
+    width: 50%;
 }
 
 .formulario fieldset{
@@ -507,7 +548,7 @@ footer a{
         height: 300px;
         padding: 2em;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 20px;
         margin-bottom: 2em;
         text-align: left;
         font-size: 1em;
@@ -539,7 +580,7 @@ footer a{
         height: 350px;
         padding: 2em;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 20px;
         margin-bottom: 2em;
         text-align: left;
     }
@@ -579,7 +620,7 @@ footer a{
         height: 350px;
         padding: 2em;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 20px;
         margin-bottom: 2em;
         text-align: left;
         font-size: 12px;
@@ -605,8 +646,6 @@ footer a{
 
     select{width: 20%;}
 
-    .destacadas{justify-content: space-evenly;}
-
     .destacadas a{
         width:45%;
         height: 280px;
@@ -616,6 +655,11 @@ footer a{
         width: 220px;
     }
 
+    .oculto{display: inline-block;}
+
+    .individuales{width: 50%;}
+
+    .prin_ampliacion{width: 100%;}
 }
 
 @media all and (min-width:1366px){
@@ -652,7 +696,7 @@ footer a{
         height: 300px;
         padding: 2em;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 20px;
         margin-bottom: 2em;
         text-align: left;
         font-size: 1em;
@@ -669,4 +713,112 @@ footer a{
         width: 200px;
     }
 
+    .destacadas{justify-content: space-between;}
+
 }
+
+.contenedorform {
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ctn-form {
+    width: 80%;
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+input[type="text"], input[type="password"], input [type="number"] {
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: #E30F87;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 1.5em;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg, #d96161, #fcb045, #d96161);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 1s ease-in;
+    background-size: 300%;
+    background-position: left;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-position: right;
+}
+
+.textoform {
+    width: 100%;
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    position: relative;
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #d96161, #fcb045);
+    opacity: 0.8;
+}
+
+.textoform h2 {
+    position: relative;
+    top: 1em;
+    color: white;
+    font-weight: 300;
+    font-size: 5em;
+}
+
+.textoform p{
+    position: relative;
+    top: 90px;
+    color: white;
+    font-size: 16px;
+    margin-top: 2em;
+}
+
+@media all and (max-width: 800px) {
+
+    .info_contacto{display: inline-block;}
+
+    .textoform {
+        display: none;
+    }
+
+    .ctn-form {
+        margin: auto;
+        width: 100%;
+        background: white;
+    }
+}
+

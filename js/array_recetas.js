@@ -17,6 +17,7 @@ let chivito = {
     "7- Servir con las papas ya cocidas."],
     dificultad: "Dificil", 
     raciones: 4, 
+    fotos_pasos: [["img/chivito/chivito1.jpg"], ["img/chivito/chivito2.jpg"], ["img/chivito/chivito3.jpg"]]
 }
 
 let tortilla = {
@@ -33,6 +34,7 @@ let tortilla = {
     "2- Sansonamos a gusto, colocamos en un sartén con tapa y cocinamos a fuego moderado"],
     dificultad: "Media",
     raciones: 4,
+    fotos_pasos: [["img/tortilla/tortilla1.jpg"], ["img/tortilla/tortilla2.jpg"], ["img/tortilla/tortilla3.jpg"]]
 };
 let asado = {
     id: 2,
@@ -52,6 +54,7 @@ let asado = {
     "6- Para el que quiera saber como se hace el choto desde cero: Es el chinchulín del cordero, el mismo va enrollando la tripa gorda del cordero. Cortar la tripa gorda que mida aproximadamente unos 20 a 25 cm y de ahí enrollarle los chinchulines atando las puntas para que mantengan su forma."],
     dificultad: "Dificil",
     raciones: 4,
+    fotos_pasos: [["img/asado/asado1.jpg"], ["img/asado/asado2.jpg"], ["img/asado/asado3.jpg"]]
 };
 
 let ñoquis= {
@@ -73,6 +76,7 @@ let ñoquis= {
     "6- Tener la salsa ya lista y caliente para servir todo junto."],
     dificultad:"Dificil",
     raciones: 4,
+    fotos_pasos: [["img/ñoquis/ñoquis1.jpg"], ["img/ñoquis/ñoquis2.jpg"], ["img/ñoquis/ñoquis3.jpg"]]
 };
 
 let pastafrola = {
@@ -96,6 +100,7 @@ let pastafrola = {
     "Nota: es importantísimo poner la manteca fría! Si por ahorrar tiempo la ponemos caliente no va a quedar igual la masa! Es fundamental que la temperatura de la masa sea fría."],
     dificultad:"Media",
     raciones: 8,
+    fotos_pasos: [["img/postafrola/pastafrola1.jpg"], ["img/pastafrola/pastafrola2.jpg"], ["img/pastafrola/pastafrola3.jpg"]]
 };
 
 let garrapiñada = {
@@ -114,6 +119,7 @@ let garrapiñada = {
     "4- Revolver bien. Una vez que quede cubierto los manies retirar del fuego y colocar en bandeja para dejar enfriar."],
     dificultad:"Facil",
     raciones: 5,
+    fotos_pasos: [["img/garrapiñada/garrapiñada1.jpg"], ["img/garrapiñada/garrapiñada2.jpg"], ["img/garrapiñada/garrapiñada3.jpg"]]
 };
 
 let tortasfritas = {
@@ -132,6 +138,7 @@ let tortasfritas = {
     "4- Y así tenemos unas ricas tortas fritas"],
     dificultad:"Dificil",
     raciones: 10,
+    fotos_pasos: [["img/tortafrita/tortafrita1.jpg"], ["img/tortafrita/tortafrita2.jpg"], ["img/tortafrita/tortafrita3.jpg"]]
 };
 
 let alfajores = {
@@ -153,6 +160,7 @@ let alfajores = {
     "7- Depende de la cantidad de tiempo en el horno te quedaran más blandos o más duritos, a mí en especial me gustan blanditos y los dejo aproximadamente 10 minutos."],
     dificultad:"Facil",
     raciones: 6,
+    fotos_pasos: [["img/alfajores/alfajores1.jpg"], ["img/alfajores/alfajores2.jpg"], ["img/alfajores/alfajores3.jpg"]]
 };
 
 let estofado = {
@@ -172,6 +180,7 @@ let estofado = {
     "5- En otra olla hervimos agua y le agregamos dos tazas de arroz una vez listo colamos y servimos. Listo espero que lo agas y a disfrutar."], 
     dificultad:"Dificil",
     raciones: 4,
+    fotos_pasos: [["img/estofado/estofado1.jpg"], ["img/estofado/estofado2.jpg"], ["img/estofado/estofado3.jpg"]]
 };
 
 let plantillas = {
@@ -191,6 +200,7 @@ let plantillas = {
     "5- Sacar del horno y disfrutar."],
     dificultad:"Facil",
     raciones: 15,
+    fotos_pasos: [["img/plantillas/plantillas1.jpg"], ["img/plantillas/plantillas2.jpg"], ["img/plantillas/plantillas3.jpg"]]
 };
 
 let ensopado = {
@@ -212,6 +222,7 @@ let ensopado = {
     "5- Listo para comer! Tambien se puede agregar con un toque de queso rallado.",],
     dificultad:"Media",
     raciones: 4,
+    fotos_pasos: [["img/ensopado/ensopado1.jpg"], ["img/ensopado/ensopado2.jpg"], ["img/ensopado/ensopado3.jpg"]]
 }
 
 let medialunas = {
@@ -231,6 +242,7 @@ let medialunas = {
     "5- Pueden agregar fiambre si lo desean.",],
     dificultad:"Media",
     raciones: 12,
+    fotos_pasos: [["img/medialunas/medialunas1.jpg"], ["img/medialunas/medialunas2.jpg"], ["img/medialunas/medialunas3.jpg"]]
 }
 
 let sliderindex = ["slider1.jpg", "slider2.jpg", "slider3.jpg", "slider4.jpg", "slider5.jpg", "slider6.jpg", "slider7.jpg"]
