@@ -60,10 +60,8 @@ function buscar_recetas() {
                 filtrado.push(recetas[i]);
             }
         }
-    
         mostrarRecetas(filtrado);
- 
-    }
+}
 
 function filtra_por_dificultad() {
     let dificultad_selec = $("#dificultad").val();
@@ -85,7 +83,6 @@ function carga_dificultad() {
             option_select.push(recetas[i]['dificultad'])
         }
     }
-
     for (let i = 0; i <= option_select.length-1; i++) {
         $("#dificultad").append(`
         <option value="${option_select[i]}">${option_select[i]}</option>`);

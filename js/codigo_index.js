@@ -12,7 +12,7 @@ function inicio() {
 
 function cambiar(){
     $("body").toggleClass("dark");
-    $("#recetas a, .infobig").toggleClass("black");
+    $("#recetas a, .infobig, .secondinfobig").toggleClass("black");
     $("h2, p").toggleClass("whitext");
 }
 

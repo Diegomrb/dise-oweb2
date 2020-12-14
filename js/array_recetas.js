@@ -17,7 +17,6 @@ let chivito = {
     "7- Servir con las papas ya cocidas."],
     dificultad: "Dificil", 
     raciones: 4, 
-    fotos_pasos: [["img/paso4-2chivito.jpg"], ["img/paso5chivito.jpg"], ["img/paso6chivito.jpg"], ["img/paso7chivito.jpg"]]
 }
 
 let tortilla = {
@@ -34,8 +33,6 @@ let tortilla = {
     "2- Sansonamos a gusto, colocamos en un sartén con tapa y cocinamos a fuego moderado"],
     dificultad: "Media",
     raciones: 4,
-    fotos_pasos: [["img/paso1tortilla.jpg"], ["img/paso3tortilla.jpg"]]
-    
 };
 let asado = {
     id: 2,
@@ -55,7 +52,6 @@ let asado = {
     "6- Para el que quiera saber como se hace el choto desde cero: Es el chinchulín del cordero, el mismo va enrollando la tripa gorda del cordero. Cortar la tripa gorda que mida aproximadamente unos 20 a 25 cm y de ahí enrollarle los chinchulines atando las puntas para que mantengan su forma."],
     dificultad: "Dificil",
     raciones: 4,
-    fotos_pasos: [["img/paso1asado.jpg"], ["img/paso5asado.jpg"], ["img/asadoparrilla.jpg"]]
 };
 
 let ñoquis= {
@@ -77,7 +73,6 @@ let ñoquis= {
     "6- Tener la salsa ya lista y caliente para servir todo junto."],
     dificultad:"Dificil",
     raciones: 4,
-    fotos_pasos: [["img/paso1ñoquis.jpg"], ["img/paso2ñoquis.jpg"], ["img/paso2-2ñoquis.jpg"], ["img/paso4ñoquis.jpg"] ["img/paso4-2ñoquis.jpg"], ["img/paso6ñoquis.jpg"], ["img/paso6-2ñoquis.jpg"]]
 };
 
 let pastafrola = {
@@ -101,7 +96,6 @@ let pastafrola = {
     "Nota: es importantísimo poner la manteca fría! Si por ahorrar tiempo la ponemos caliente no va a quedar igual la masa! Es fundamental que la temperatura de la masa sea fría."],
     dificultad:"Media",
     raciones: 8,
-    fotos_pasos: [["img/pastafrola1.jpg"], ["img/pastafrola2.jpg"], ["img/pastafrola3.jpg"], ["img/pastafrola4.jpg"]]
 };
 
 let garrapiñada = {
@@ -120,7 +114,6 @@ let garrapiñada = {
     "4- Revolver bien. Una vez que quede cubierto los manies retirar del fuego y colocar en bandeja para dejar enfriar."],
     dificultad:"Facil",
     raciones: 5,
-    fotos_pasos: [["img/paso1garrapiñada.jpg"], ["img/paso2garrapiñada.jpg"], ["img/paso3garrapiñada.jpg"], ["img/paso4garapiñada.jpg"], ["img/paso4garrapiñada.jpg"]]
 };
 
 let tortasfritas = {
@@ -139,7 +132,6 @@ let tortasfritas = {
     "4- Y así tenemos unas ricas tortas fritas"],
     dificultad:"Dificil",
     raciones: 10,
-    fotos_pasos: [["img/paso1tortasfritas.jpg"], ["img/paso2tortasfritas.jpg"], ["img/paso2-2tortasfritas.jpg"], ["img/paso3tortasfritas.jpg"]]
 };
 
 let alfajores = {
@@ -161,7 +153,6 @@ let alfajores = {
     "7- Depende de la cantidad de tiempo en el horno te quedaran más blandos o más duritos, a mí en especial me gustan blanditos y los dejo aproximadamente 10 minutos."],
     dificultad:"Facil",
     raciones: 6,
-    fotos_pasos: [["img/paso1alfajores.jpg"], ["img/paso2alfajores.jpg"], ["img/paso4alfajores.jpg"], ["img/pasopaso5alfajores.jpg"], ["img/pasopaso5-2alfajores.jpg"], ["img/pasopaso5-3alfajores.jpg"], ["img/pasopaso6alfajores.jpg"], ["img/pasopaso7alfajores.jpg"], ["img/pasopaso7-2alfajores.jpg"]]
 };
 
 let estofado = {
@@ -181,7 +172,6 @@ let estofado = {
     "5- En otra olla hervimos agua y le agregamos dos tazas de arroz una vez listo colamos y servimos. Listo espero que lo agas y a disfrutar."], 
     dificultad:"Dificil",
     raciones: 4,
-    fotos_pasos: [["img/paso1estofado.jpg"], ["img/paso1-2estofado.jpg"], ["img/paso2estofado.jpg"], ["img/paso3estofado.jpg"],["img/paso4-2estofado.jpg"], ["img/paso5estofado.jpg"]]
 };
 
 let plantillas = {
@@ -201,7 +191,6 @@ let plantillas = {
     "5- Sacar del horno y disfrutar."],
     dificultad:"Facil",
     raciones: 15,
-    fotos_pasos: [["img/paso3plantillas.jpg"], ["img/paso5plantillas.jpg"]]
 };
 
 let ensopado = {
@@ -223,7 +212,6 @@ let ensopado = {
     "5- Listo para comer! Tambien se puede agregar con un toque de queso rallado.",],
     dificultad:"Media",
     raciones: 4,
-    fotos_pasos: [["img/paso1ensopado.jpg"], ["img/paso2ensopado.jpg"], ["img/paso3ensopado.jpg"], ["img/paso4ensopado.jpg"], ["img/paso3ensopado.jpg"], ["img/paso4ensopado.jpg"], ["img/paso5ensopado.jpg"], ["img/paso6ensopado.jpg"], ["img/paso3ensopado.jpg"], ["img/paso7ensopado.jpg"]]
 }
 
 let medialunas = {
@@ -243,7 +231,6 @@ let medialunas = {
     "5- Pueden agregar fiambre si lo desean.",],
     dificultad:"Media",
     raciones: 12,
-    fotos_pasos: [["img/paso5medialunas.jpg"]]
 }
 
 let sliderindex = ["slider1.jpg", "slider2.jpg", "slider3.jpg", "slider4.jpg", "slider5.jpg", "slider6.jpg", "slider7.jpg"]

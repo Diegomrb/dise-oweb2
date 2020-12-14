@@ -7,19 +7,21 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #E0E0E0;
+    font-size: 14px;
 }
 
 a{text-decoration: none;}
 
 #v_modal{
-    width: 60%;
+    width: 90%;
     height: 80vh;
     background: rgb(217,97,97);
     background: linear-gradient(90deg, rgba(217,97,97,1) 0%, rgba(252,176,69,1) 100%);
     border-radius: 25px;
     position: fixed;
     top: -100vh;
-    left: 20%;
+    left: 5%;
+    font-size: 10px;
     z-index: 100;
     color: white;
     display: flex;
@@ -73,10 +75,12 @@ a{text-decoration: none;}
     background: orange;
     border-radius: 1000px;
     position: absolute;
-    right: 90px;
+    right: 80px;
     cursor: pointer;
     color: white;
 }
+
+#dyn span{vertical-align: middle;}
 
 #dyn div {
     height: 23px;
@@ -93,7 +97,7 @@ a{text-decoration: none;}
     color: white;
 }
 
-#recetas a.black, select.black, #buscar_recetas.black, .ingredientes.black, .pasos.black, .infobig.black{background-color: #7c7c7c;
+#recetas a.black, select.black, #buscar_recetas.black, .ingredientes.black, .pasos.black, .infobig.black, .secondinfobig.black{background-color: #7c7c7c;
 color: white;}
 
 .whitext{color: white;}
@@ -122,7 +126,6 @@ header{
 
 .contenedor
 {
-    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -136,8 +139,9 @@ header{
 nav{
     margin: auto;
     display: flex;
-    width: 80%;
+    flex-wrap: wrap;
     border-radius: 50px;
+    width: 100%;
     padding: 1em 1.5em;
     background-color: rgba(255, 255, 255, 0.8);
     justify-content: space-between;
@@ -148,7 +152,6 @@ nav a{
     font-weight: 600;
     border-bottom: 2px transparent solid;
     transition: 0.4s;
-    margin-right: 1em;
 }
 
 nav a:hover{
@@ -182,15 +185,14 @@ nav a:hover{
 }
 
 .infobig{
-    display:flex ;
-    align-items: center;
-    justify-content: space-around;
+    margin:auto;
     width: 100%; 
-    height: 350px;
+    height: 500px;
     padding: 2em;
     background-color: white;
     border-radius: 25px;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .infobig input{
@@ -201,7 +203,7 @@ nav a:hover{
     border-radius: 50px;
 }
 
-.infobig a{
+.orangebt{
     display: inline-block;
     padding: 0.5em 1.5em;
     background-color: orange;
@@ -210,17 +212,12 @@ nav a:hover{
     color: #2f3439;
 }
 
-.infobig div:nth-of-type(1){width:60%}
-
 .infobig img{
-    width:75%;
+    width:45%;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
 }
 
-.infobig div:nth-of-type(2){
-    width: 60%;
-    text-align: right;
-}
+.secondinfobig{display: none;}
 
 #buscar_recetas{
     padding: 1em;
@@ -229,13 +226,16 @@ nav a:hover{
     font-weight: bold;
     border-radius: 25px;
     background: white;
-    width: 45%;
+    width: 90%;
+    margin-bottom: 2em;
 }
 
 #filtro_horas{display: flex;
     width: 300px;
 justify-content: space-between;
-cursor: pointer;}
+cursor: pointer;
+margin-bottom: 3em;
+}
 
 #filtro_horas p{margin: 0px;
     font-size: 12px;
@@ -250,6 +250,7 @@ select{
     color: #333333;
     font-weight: bold;
     border-radius: 25px;
+    width: 90%;
 }
 
 #recetas{
@@ -261,8 +262,9 @@ select{
 
 #recetas a{
     width:40%;
-    height: 250px;
+    height: 30%;
     padding: 2em;
+    font-size: 10px;
     background-color: white;
     border-radius: 25px;
     margin-bottom: 2em;
@@ -273,13 +275,38 @@ select{
 
 #recetas p{
     display: none;
-    width: 50%;
     margin-top: 0.5em;
 }
 
 #recetas article img{
     width: 60%;
     margin-top: 1em;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
+}
+
+.destacadas{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destacadas a{
+    width:100%;
+    height: 360px;
+    padding: 2em;
+    font-size: 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.destacadas a article{color: #333333 ;}
+
+.destacadas article img{
+    width: 250px;
+    margin-top: 2em;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
 }
 
@@ -425,31 +452,11 @@ footer a{
     margin-right: 3em;
 }
 
-@media all and (min-width:1300px){
-
-    .banner{
-        background: url(img/primerslider/foto1.jpg) center bottom / cover;
-        animation: slider 35s 6s infinite;
-        height: 450px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        margin-bottom:2em;
-    }
-    
-    @keyframes slider{
-        0%{background-image: url(img/primerslider/foto1.jpg) ;}
-        30%{background-image: url(img/primerslider/foto2.jpg) ;}
-        60%{background-image: url(img/primerslider/foto3.jpg) ;}
-        80%{background-image: url(img/primerslider/foto4.jpg) ;}
-        100%{background-image: url(img/primerslider/foto5.jpg) ;}
-    }
-
-}
-
 @media all and (min-width:767px){
-
+    
     .contenedor
     {
+        font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -457,6 +464,11 @@ footer a{
         width: 95%;
         margin: auto;
         max-width: 1200px;
+    }
+
+    #v_modal{width: 60%;
+        font-size: 1em;
+        left: 20%;
     }
 
     .cabeza{
@@ -498,6 +510,7 @@ footer a{
         border-radius: 25px;
         margin-bottom: 2em;
         text-align: left;
+        font-size: 1em;
     }
 
     #recetas p{
@@ -517,7 +530,143 @@ footer a{
         width: 100px;
     }
 
+    .infobig{
+        margin: 0%;
+        display:flex ;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%; 
+        height: 350px;
+        padding: 2em;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 2em;
+        text-align: left;
+    }
+    
+    .infobig input{
+        padding: 1em;
+        border: 1.5px #7c7c7c solid;
+        outline: none;
+        margin: 2em 1.5em 1.5em 0em;
+        border-radius: 50px;
+    }
+    
+    .infobig a{
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        background-color: orange;
+        border-radius: 50px;
+        font-weight: bold;
+        color: #2f3439;
+    }
+    
+    .infobig div:nth-of-type(1){width:60%}
+    
+    .infobig img{
+        width:75%;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
+    }
+    
+    .infobig div:nth-of-type(2){
+        width: 60%;
+        text-align: right;
+    }
+
+    .secondinfobig{
+        display:inline-block ;
+        width: 26%; 
+        height: 350px;
+        padding: 2em;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 2em;
+        text-align: left;
+        font-size: 12px;
+    }
+    .secondinfobig img{
+        width:65%;
+        margin-bottom: 2em;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7))
+    }
+    .secondinfobig div{
+        text-align: center;
+    }
+    .secondinfobig h3{margin-bottom: 2em;}
+
+    #buscar_recetas{
+        width: 45%;
+        margin: 0px;
+    }
+
+    #filtro_horas{
+    margin-bottom: 0px;
+    }
+
+    select{width: 20%;}
+
+    .destacadas{justify-content: space-evenly;}
+
+    .destacadas a{
+        width:45%;
+        height: 280px;
+    }
+
+    .destacadas article img{
+        width: 220px;
+    }
+
 }
 
+@media all and (min-width:1366px){
 
+    .banner{
+        background: url(img/primerslider/foto1.jpg) center bottom / cover;
+        animation: slider 35s 6s infinite;
+        height: 450px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-bottom:2em;
+    }
+    
+    @keyframes slider{
+        0%{background-image: url(img/primerslider/foto1.jpg) ;}
+        30%{background-image: url(img/primerslider/foto2.jpg) ;}
+        60%{background-image: url(img/primerslider/foto3.jpg) ;}
+        80%{background-image: url(img/primerslider/foto4.jpg) ;}
+        100%{background-image: url(img/primerslider/foto5.jpg) ;}
+    }
 
+    .contenedor
+    {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 95%;
+        margin: auto;
+    }
+
+    #recetas a{
+        width:30%;
+        height: 300px;
+        padding: 2em;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 2em;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    #recetas article img{margin-top: -10px;}
+
+    .destacadas a{
+        width:30%;
+        height: 280px;
+    }
+
+    .destacadas article img{
+        width: 200px;
+    }
+
+}
