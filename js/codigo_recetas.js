@@ -1,7 +1,6 @@
 $(document).ready(inicio);
 
 function inicio(){
-
     mostrarRecetas(recetas);
     carga_dificultad();
     $("#dificultad").change(filtra_por_dificultad);

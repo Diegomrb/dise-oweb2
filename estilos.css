@@ -416,63 +416,6 @@ height: 180px;}
 
 .info_contacto p{margin-bottom: 1em;}
 
-.form{display: flex;
-align-content: space-between;
-flex-wrap: wrap;
-height: 300px;}
-
-.formulario{width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 269px;
-}
-
-.btn{
-    padding: 0.5em 1.5em;
-    background-color: orange;
-    border-radius: 50px;
-    border: none;
-    font-weight: bold;
-    color: #2f3439;
-    outline: none;
-    border: 1.5px solid transparent;
-    transition: 0.5s;
-}
-
-.btn:hover{
-    border: 1.5px solid white;
-    color: white;
-    background-color:#333333;
-}
-
-.ultimo{width: 100%;display: flex;}
-
-.ultimo textarea{margin-bottom: 15px;
-    font-family: 'Open Sans', sans-serif; ;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box; 
-    border: none; 
-    color: #525c66; 
-    font-size: 1em;
-    resize: horizontal; 
-}
-
-.datos input{
-    padding: 1em;
-    border: none;
-    outline: none;
-    margin-top: 1em;
-    margin-right: 100px;
-    border-radius: 50px;
-    width: 50%;
-}
-
-.formulario fieldset{
-    border: none;
-}
-
 /*footer*/
 
 footer{
@@ -535,8 +478,6 @@ footer a{
 
     nav{
         width: 30%;
-        display: flex;
-        justify-content: space-between;
         padding: 0px;
         background: transparent;
     }
@@ -546,10 +487,7 @@ footer a{
     #recetas a{
         width:48%;
         height: 300px;
-        padding: 2em;
         background-color: white;
-        border-radius: 20px;
-        margin-bottom: 2em;
         text-align: left;
         font-size: 1em;
     }
@@ -583,14 +521,6 @@ footer a{
         border-radius: 20px;
         margin-bottom: 2em;
         text-align: left;
-    }
-    
-    .infobig input{
-        padding: 1em;
-        border: 1.5px #7c7c7c solid;
-        outline: none;
-        margin: 2em 1.5em 1.5em 0em;
-        border-radius: 50px;
     }
     
     .infobig a{
@@ -683,23 +613,14 @@ footer a{
 
     .contenedor
     {
-        font-size: 16px;
-        display: flex;
-        align-items: center;
         justify-content: space-around;
         width: 95%;
-        margin: auto;
     }
 
     #recetas a{
         width:30%;
         height: 300px;
         padding: 2em;
-        background-color: white;
-        border-radius: 20px;
-        margin-bottom: 2em;
-        text-align: left;
-        font-size: 1em;
     }
 
     #recetas article img{margin-top: -10px;}
@@ -774,7 +695,7 @@ input[type="submit"]:hover {
 
 .textoform {
     width: 100%;
-    background-image: url(../images/img1.jpg);
+    background-image: url(img/img1.jpg);
     background-position: center;
     background-size: cover;
     padding: 30px;

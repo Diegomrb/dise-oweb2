@@ -10,19 +10,9 @@ $(document).ready(inicio);
 
 function inicio() {
     ampliar_receta();
-    cargarImagenes();
     $("#dyn").click(activar);
     $("#dyn").click(cambiar);
 }
-
-/*function cargarImagenes() {
-    for (let i = 0; i <= recetas.length - 1; i++) {
-        $(".pasosrecetas").append(`
-        <div>
-            <img src="${recetas[id]['fotos_pasos'][i]}">
-        </div>`)
-    }
-*/
 
 function cambiar(){
     $("body").toggleClass("dark");
